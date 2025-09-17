@@ -231,6 +231,7 @@ a {
 
 .videos__item-text {
     position: absolute;
+    max-width: 500px;
     left: 44px;
     bottom: 27px;
     font-family: 'DrukWideCyr-Medium';
