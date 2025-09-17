@@ -184,6 +184,17 @@ a {
     padding: 20px 40px;
     border: 1px solid #fff;
     border-radius: 54px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.quote {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    color: #5a5a5a;
+    padding: auto 0 auto 28px;
 }
 
 .content__arrows {

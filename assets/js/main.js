@@ -16,20 +16,30 @@ const swiper = new Swiper('.videos', {
     },
 });
 
-const swiperv = new Swiper('.videos-v', {
-  loop: false,
 
-  navigation: {
-    nextEl: '.next-v',
-    prevEl: '.prev-v',
-  },
+var sliders = document.querySelectorAll('.videos-v'),
+    prevArrow = document.querySelectorAll('.prev-v'),
+    nextArrow = document.querySelectorAll('.next-v');
 
-  slidesPerView: 1,
-  spaceBetween: 65,
+sliders.forEach((slider, idx) => {
+  let swiperv = new Swiper(slider, {
+    loop: false,
 
-  breakpoints: {
-        1024: {
-          slidesPerView: 3,
-        },
+    navigation: {
+      nextEl: nextArrow[idx],
+      prevEl: prevArrow[idx],
     },
+
+    slidesPerView: 1,
+    spaceBetween: 65,
+
+    breakpoints: {
+      624: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  })
 });
