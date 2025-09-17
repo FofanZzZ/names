@@ -150,6 +150,7 @@ a {
 
 .content {
     padding-top: 80px;
+    margin-bottom: 94px;
 }
 
 .content__element:not(:last-child) {
@@ -270,4 +271,40 @@ a {
         left: 30px;
         bottom: 29px;
     }
+}
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 84px 125px;
+    width: 100%;
+    border-radius: 47px;
+    box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
+    background: #fff;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.advantages__number {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 77px;
+    line-height: 100%;
+    text-align: center;
+    color: #0a0a0a;
+}
+
+.advantages__text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    text-align: center;
+    color: #797979;
 }
