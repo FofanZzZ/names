@@ -152,6 +152,10 @@ a {
     padding-top: 80px;
 }
 
+.content__element:not(:last-child) {
+    margin-bottom: 50px;
+}
+
 .content__header {
     font-family: 'DrukWideCyr-Medium';
     font-weight: 500;
@@ -240,4 +244,19 @@ a {
     line-height: 100%;
     color: #fff;
     z-index: 2;
+}
+
+.videos-v {
+    overflow: visible;
+    & .videos__item {
+        max-width: 480px;
+        &::after {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        }
+    }
+    & .videos__item-text {
+        max-width: 380px;
+        left: 30px;
+        bottom: 29px;
+    }
 }
