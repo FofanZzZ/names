@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -283,6 +284,7 @@ a {
     border-radius: 47px;
     box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
     background: #fff;
+    margin-bottom: 85px;
 }
 
 .advantages__item {
@@ -307,4 +309,96 @@ a {
     line-height: 100%;
     text-align: center;
     color: #797979;
+}
+
+.about-us {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+}
+
+.about-us__big {
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 323px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #232323;
+}
+
+.about-us__worker {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.worker__bio {
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    top: -34px;
+    right: -58px;
+    z-index: 1;
+}
+
+.worker__fio {
+    text-align: center;
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.worker__words {
+    position: relative;
+    padding: 32px 38px 41px 46px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    color: #fff;
+    border: 2px solid #646464;
+    border-radius: 33px;
+    max-width: 490px;
+    backdrop-filter: blur(32.099998474121094px);
+    background: rgba(21, 21, 21, 0.04);
+}
+
+.worker__photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    top: -83px;
+    left: -34px;
+    & img {
+        max-width: 100%;
+    }
+}
+
+.worker__status {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 300px;
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.worker__text {
+    position: relative;
+    top: 18px;
+    max-width: 448px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    color: #b5b5b5;
 }
