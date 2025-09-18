@@ -1,4 +1,5 @@
 const swiper = new Swiper('.videos', {
+  rewind: true,
   loop: false,
 
   navigation: {
@@ -23,6 +24,7 @@ var sliders = document.querySelectorAll('.videos-v'),
 
 sliders.forEach((slider, idx) => {
   let swiperv = new Swiper(slider, {
+    rewind: true,
     loop: false,
 
     navigation: {
