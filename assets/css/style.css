@@ -109,6 +109,7 @@ a {
     transition: 0.2s linear;
     &:hover {
         background-color: #FFF;
+        box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
         color: #921813;
     }
 }
@@ -328,6 +329,7 @@ a {
     line-height: 100%;
     text-transform: uppercase;
     color: #232323;
+    cursor: default;
 }
 
 .about-us__worker {
@@ -394,6 +396,7 @@ a {
     line-height: 100%;
     text-align: center;
     color: #fff;
+    cursor: default;
 }
 
 .worker__text {
@@ -507,12 +510,14 @@ a {
     width: fit-content;
     &:hover {
         background-color: #FFF;
+        box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
         color: #921813;
     }
 }
 
 .animation-block {
     position: relative;
+    margin-bottom: 140px;
 }
 
 .horizontal-strip__red {
@@ -556,6 +561,7 @@ a {
     color: #000;
     white-space: nowrap;
     -webkit-backface-visibility: hidden;
+    cursor: default;
 }
 
 .red-dot {
@@ -564,4 +570,165 @@ a {
     height: 34px;
     border-radius: 100%;
     background: #921813;
+}
+
+.clouds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    margin-bottom: 175px;
+}
+
+.clouds__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #fff 1px solid;
+    border-radius: 100%;
+    transition: 0.2s linear;
+    &:hover {
+        box-shadow: 
+        0 4px 61px 0 rgba(255, 255, 255, 0.35),
+        inset 0 4px 61px 0 rgba(255, 255, 255, 0.35);
+        & .clouds__plus {
+            box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
+        }
+    }
+}
+
+.cloud-1 {
+    width: 680px;
+    height: 240px;
+    transform: rotate(-10deg);
+    justify-self: flex-end;
+    & .clouds__text {
+        transform: rotate(5deg);
+        max-width: 490px;
+        right: -15px;
+    }
+}
+
+.cloud-2 {
+    width: 469px;
+    height: 151px;
+    transform: rotate(22deg);
+    justify-self: center;
+    align-self: center;
+    & .clouds__text {
+        transform: rotate(-10deg);
+        max-width: 410px;
+        top: -10px;
+        right: -88px;
+    }
+}
+
+.cloud-3 {
+    width: 567px;
+    height: 239px;
+    transform: rotate(2deg);
+    justify-self: flex-end;
+    align-self: flex-end;
+    & .clouds__text {
+        transform: rotate(4deg);
+        max-width: 388px;
+        right: -60px;
+    }
+}
+
+.cloud-4 {
+    width: 540px;
+    height: 152px;
+    transform: rotate(2deg);
+    & .clouds__text {
+        transform: rotate(-8deg);
+        max-width: 424px;
+        right: -65px;
+        top: -5px;
+    }
+}
+
+.clouds__plus {
+    display: flex;
+    left: 10%;
+    top: -15%;
+    position: absolute;
+    width: fit-content;
+    padding: 27px 26px;
+    border-radius: 100%;
+    background-color: #921813;
+    box-shadow: 0 0 40px 0 rgba(192, 32, 26, 0.69);
+    transition: 0.2s linear;
+}
+
+.clouds__text {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 100%;
+    color: #fff;
+    position: relative;
+    cursor: default;
+}
+
+.map {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 839px;
+    column-gap: 65px;
+    margin-bottom: 100px;
+}
+
+.map__place {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.map__text {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 59px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.map__address {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 17px;
+    border-radius: 40px;
+    background: #131313;
+    padding: 32px 74px 40px 92px;
+}
+
+.address__city {
+    position: relative;
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 57px;
+    line-height: 100%;
+    color: #424242;
+    & img {
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        justify-self: center;
+        transform: translate(-50%);
+    }
+}
+
+.address__place {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 136%;
+    color: #fff;
+}
+
+.map__yandex {
+    border-radius: 60px;
+    width: fit-content;
 }
