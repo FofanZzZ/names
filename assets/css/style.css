@@ -779,3 +779,221 @@ a {
         color: #fff;
     }
 }
+
+.request {
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 78px 128px 101px 132px;
+    margin-bottom: 125px;
+}
+
+.request__title {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 89px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 78px;
+}
+
+.request__text {
+    width: 50%;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 136%;
+    color: #919191;
+    margin-bottom: 99px;
+}
+
+input[disabled]:hover,
+button[disabled]:hover {
+  pointer-events: none;
+}
+
+.request__form {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    & label {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 136%;
+        color: #919191;
+        &:first-child {
+            margin-right: 23px;
+        }
+        &:last-of-type {
+            margin-right: 18px;
+        }
+        & input {
+            max-width: 433px;
+            border: 2px solid #a8a8a8;
+            border-radius: 20px;
+            background-color: transparent;
+            padding: 25px 34px;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 136%;
+            color: #666;
+            transition: 0.2s linear;
+            &:focus {
+                color: #fff;
+            }
+            &.error {
+                border: 2px solid #921813;
+            }
+        }
+    }
+    & button {
+        height: fit-content;
+        align-self: flex-end;
+        border: none;
+        border-radius: 20px;
+        background: #921813;
+        padding: 32px 100px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #fff;
+        transition: 0.2s linear;
+        &:not(:disabled) {
+            cursor: pointer;
+        }
+        &:not(:disabled):hover {
+            background-color: #FFF;
+            box-shadow: 0 4px 61px 0 rgba(255, 255, 255, 0.35);
+            color: #921813;
+        }
+        &:disabled {
+            background-color: #a8a8a8;
+        }
+    }
+}
+
+.request__politics {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 136%;
+    color: #919191;
+    & a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+        text-decoration-skip-ink: none;
+        color: #921813;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.footer {
+    background-color: #0E0E0E;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: row;
+    padding-top: 72px;
+    margin-bottom: 100px;
+}
+
+.footer__logo {
+    max-width: 284px;
+    margin-right: 153px;
+}
+
+.footer__menu {
+    margin-right: 119px;
+    & ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 87px;
+        row-gap: 30px;
+    }
+}
+
+.footer__menu-item a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+    transition: 0.2s linear;
+    &:hover {
+        color: #921813;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-right: 70px;
+}
+
+.footer__contacts-mail {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 136%;
+    color: #919191;
+    transition: 0.2s linear;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.footer__contacts-policy {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 136%;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+    color: #921813;
+    transition: 0.2s linear;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer__socials-phone {
+    font-family: 'DrukWideCyr-Medium';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    transition: 0.2s linear;
+    &:hover {
+        color: #921813;
+    }
+}
+
+.footer__socials-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: fit-content;
+}
+
+.footer__copyrights {
+    max-width: 25%;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 136%;
+    color: #919191;
+    padding-bottom: 79px;
+}

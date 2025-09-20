@@ -26,12 +26,12 @@
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#ourcases">наши кейсы</a></li>
                         <li class="menu__item"><a class="menu__link" href="#aboutus">о нас</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">о компании</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#aboutcompany">о компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contacts">контакты</a></li>
                     </ul>
                 </nav>
                 <div class="cost">
-                    <a class="cost__btn" href="#">рассчитать стоимость</a>
+                    <a class="cost__btn" href="#request">рассчитать стоимость</a>
                     <a class="cost__phone" href="tel:+79938932392">
                         <img src="assets/images/phone.svg" alt="">
                     </a>
@@ -217,7 +217,7 @@
 
         <div class="container">
             <div class="advantages">
-                <div class="advantages__item" id="aboutus">
+                <div class="advantages__item">
                     <div class="advantages__number">
                         10+
                     </div>
@@ -246,7 +246,7 @@
 
         <div class="container">
             <div class="about-us">
-                <div class="about-us__big">О нас</div>
+                <div class="about-us__big" id="aboutus">О нас</div>
                 <div class="about-us__worker">
                     <div class="worker__bio">
                         <div class="worker__fio">Богдан Сиволап</div>
@@ -285,7 +285,7 @@
 
         <div class="container">
             <div class="projects">
-                <div class="projects__title">
+                <div class="projects__title" id="aboutcompany">
                     Создаем контент, <span>который работает</span>
                 </div>
                 <div class="grid">
@@ -294,28 +294,28 @@
                             <div class="grid__item-header">Имиджевое / Корпоративное видео</div>
                             <div class="grid__item-text">Эффектная визитная карточка бренда, которая формирует положительное восприятие компании, укрепляет её статус и создаёт эмоциональную связь с аудиторией</div>
                         </div>
-                        <a href="#" class="grid__item-btn">обсудить проект</a>
+                        <a href="#request" class="grid__item-btn">обсудить проект</a>
                     </div>
                     <div class="grid__item">
                         <div class="grid__item-top">
                             <div class="grid__item-header">Рекламное видео</div>
                             <div class="grid__item-text">Это мощный инструмент продвижения вашего бизнеса, повышающий узнаваемость бренда и увеличивающий продажи</div>
                         </div>
-                        <a href="#" class="grid__item-btn">обсудить проект</a>
+                        <a href="#request" class="grid__item-btn">обсудить проект</a>
                     </div>
                     <div class="grid__item">
                         <div class="grid__item-top">
                             <div class="grid__item-header">Контент для социальных сетей</div>
                             <div class="grid__item-text">Создаем видео любого формата, которые привлекают внимание вашей аудитории, повышают вовлечённость подписчиков и конверсию в продажи</div>
                         </div>
-                        <a href="#" class="grid__item-btn">обсудить проект</a>
+                        <a href="#request" class="grid__item-btn">обсудить проект</a>
                     </div>
                     <div class="grid__item">
                         <div class="grid__item-top">
                             <div class="grid__item-header">Продюсируем под ключ</div>
                             <div class="grid__item-text">от разработки уникальной концепции и создания профессионального контента до настройки продвижение</div>
                         </div>
-                        <a href="#" class="grid__item-btn">обсудить проект</a>
+                        <a href="#request" class="grid__item-btn">обсудить проект</a>
                     </div>
                 </div>
             </div>
@@ -373,7 +373,7 @@
         <div class="container">
             <div class="map">
                 <div class="map__place">
-                    <div class="map__text">Мы находимся</div>
+                    <div class="map__text" id="contacts">Мы находимся</div>
                     <div class="map__address">
                         <div class="address__city">
                             <img src="assets/images/redcross.svg" alt="">Москва
@@ -429,10 +429,58 @@
             </div>
         </div>
 
+        <div class="container">
+            <div class="request" id="request">
+                <div class="request__title">Введите свои контактные данные, и мы перезвоним</div>
+                <div class="request__text">Наш менеджер просчитает детали<br>и свяжется с вами<br>в ближайшее время</div>
+
+                <form class="request__form" id="requestForm">
+                    <label>
+                        Введите имя
+                        <input type="text" name="name" id="nameInput" placeholder="Имя" required>
+                    </label>
+                    <label>
+                        Введите телефон
+                        <input type="text" name="phone" id="phoneInput" placeholder="+7 ___ ___-__-__" required>
+                    </label>
+                    <button type="submit" id="submitButton">Отправить</button>
+                </form>
+
+                <div class="request__politics">Нажимая на кнопку «Отправить», вы подтверждаете свое согласие на обработку персональных данных и соглашаетесь<br>с <a href="https://mosvideo.org/policy/">политикой конфиденциальности</a></div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__items">
+                <img src="assets/images/footerlogo.svg" alt="" class="footer__logo">
+                <nav class="footer__menu">
+                    <ul>
+                        <li class="footer__menu-item"><a href="#ourcases">наши кейсы</a></li>
+                        <li class="footer__menu-item"><a href="#aboutcompany">о компании</a></li>
+                        <li class="footer__menu-item"><a href="#aboutus">о нас</a></li>
+                        <li class="footer__menu-item"><a href="#contacts">контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <a href="mailto:bs@namesgroup.ru" class="footer__contacts-mail">bs@namesgroup.ru</a>
+                    <a href="https://mosvideo.org/policy/" class="footer__contacts-policy">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="tel:+79938932392" class="footer__socials-phone">+7 993 893-23-92</a>
+                    <div class="footer__socials-icons">
+                        <a href="https://vk.com/names_group"><img src="assets/images/footervk.svg" alt=""></a>
+                        <a href="https://www.instagram.com/namesgroup.ru"><img src="assets/images/footerinst.svg" alt=""></a>
+                        <a href="https://t.me/namesgroupru"><img src="assets/images/footertg.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyrights">
+                © 2025 Креативное видеопродакшн-агентство Неймс
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
