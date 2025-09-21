@@ -3,24 +3,27 @@ const swiper = new Swiper('.videos', {
   loop: false,
 
   navigation: {
-    nextEl: '.next',
-    prevEl: '.prev',
+    nextEl: '.next-1, .next-2',
+    prevEl: '.prev-1, .prev-2',
   },
 
-  slidesPerView: 1,
-  spaceBetween: 53,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
 
   breakpoints: {
         1024: {
-          slidesPerView: 1.7,
+          slidesPerView: 'auto',
+          spaceBetween: 53,
         },
     },
 });
 
 
 var sliders = document.querySelectorAll('.videos-v'),
-    prevArrow = document.querySelectorAll('.prev-v'),
-    nextArrow = document.querySelectorAll('.next-v');
+    prevArrow1 = document.querySelectorAll('.prev-v-1'),
+    nextArrow1 = document.querySelectorAll('.next-v-1'),
+    prevArrow2 = document.querySelectorAll('.prev-v-2'),
+    nextArrow2 = document.querySelectorAll('.next-v-2');
 
 sliders.forEach((slider, idx) => {
   let swiperv = new Swiper(slider, {
@@ -28,19 +31,16 @@ sliders.forEach((slider, idx) => {
     loop: false,
 
     navigation: {
-      nextEl: nextArrow[idx],
-      prevEl: prevArrow[idx],
+      nextEl: [nextArrow1[idx], nextArrow2[idx]],
+      prevEl: [prevArrow1[idx], prevArrow2[idx]],
     },
 
-    slidesPerView: 1,
-    spaceBetween: 65,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
 
     breakpoints: {
-      624: {
-        slidesPerView: 2,
-      },
       1024: {
-        slidesPerView: 3,
+        spaceBetween: 65,
       },
     },
   })
