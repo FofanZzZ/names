@@ -92,6 +92,10 @@ a {
     padding: 22px 0;
 }
 
+.overlay {
+    display: none;
+}
+
 .menu__list {
     font-size: 18px;
     line-height: 1;
@@ -1085,7 +1089,7 @@ button[disabled]:hover {
 }
 
 .mobile-ellipse {
-    visibility: none;
+    display: none;
 }
 
 .ellipse:nth-child(1) {
@@ -1260,7 +1264,7 @@ button[disabled]:hover {
         height: 100vh;
         background: rgba(0, 0, 0, 0.67);
         opacity: 0; 
-        visibility: hidden; 
+        display: none;
         transition: opacity 0.3s ease-in-out;
         z-index: 2;
     }
@@ -1269,7 +1273,7 @@ button[disabled]:hover {
     }
     .overlay.active {
         opacity: 1;
-        visibility: visible;
+        display: block;
     }
     .menu__mobile-header {
         display: flex;
@@ -1792,7 +1796,7 @@ button[disabled]:hover {
         );
     }
     .mobile-ellipse {
-        visibility: visible;
+        display: block;
     }
 }
 
