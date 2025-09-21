@@ -1770,8 +1770,8 @@ button[disabled]:hover {
     .ellipse:nth-child(7) {
         width: 671px;
         height: 885px;
-        top: 5280px;
-        left: -150px;
+        top: 5100px;
+        left: -100px;
         background: radial-gradient(
             circle at center,
             rgba(146, 24, 19, 0.3),
