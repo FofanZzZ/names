@@ -901,6 +901,7 @@ button[disabled]:hover {
             border-radius: 20px;
             background-color: transparent;
             padding: 25px 34px;
+            font-family: 'Manrope';
             font-weight: 400;
             font-size: 25px;
             line-height: 136%;
@@ -921,6 +922,7 @@ button[disabled]:hover {
         border-radius: 20px;
         background: #921813;
         padding: 32px 100px;
+        font-family: 'Manrope';
         font-weight: 500;
         font-size: 24px;
         line-height: 100%;
