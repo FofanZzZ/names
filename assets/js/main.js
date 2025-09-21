@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (isNameValid && isPhoneValid) {
       // Здесь можно отправить данные на сервер
-      alert('Форма успешно отправлена!');
+      // alert('Форма успешно отправлена!');
       form.reset();
       resetValidation();
     }
