@@ -274,6 +274,8 @@ a {
     background-color: rgba(255, 255, 255, 0.13);
     backdrop-filter: blur(16.700000762939453px);
     transition: background-color, border 0.2s linear;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
     &:hover {
         border: 1px solid rgba(255, 255, 255, 0.7);
         background-color: rgba(255, 255, 255, 0.18);
