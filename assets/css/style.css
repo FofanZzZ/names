@@ -1082,11 +1082,19 @@ button[disabled]:hover {
     filter: blur(40px);
 }
 
+.mobile-ellipse {
+    visibility: none;
+}
+
 .ellipse:nth-child(1) {
     width: 1920px;
     height: 1054px;
     top: 1260px;
-    background: radial-gradient(rgba(146, 24, 19, 0.3), rgba(146, 24, 19, 0) 70%);
+    background: radial-gradient(
+        circle at center,
+        rgba(146, 24, 19, 0.3),
+        rgba(146, 24, 19, 0) 70%
+    );
 }
 
 .ellipse:nth-child(2) {
@@ -1182,6 +1190,9 @@ button[disabled]:hover {
         height: fit-content;
         &.container {
             justify-content: normal;
+        }
+        &::before {
+            display: none;
         }
     }
     .header__top {
@@ -1689,6 +1700,97 @@ button[disabled]:hover {
         & a {
             text-underline-offset: 1px;
         }
+    }
+    .ellipse:nth-child(1) {
+        width: 588px;
+        height: 1062px;
+        top: -100px;
+        left: 100px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(2) {
+        width: 599px;
+        height: 599px;
+        top: 1000px;
+        left: 100px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(3) {
+        width: 599px;
+        height: 599px;
+        top: 1650px;
+        left: -200px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(4) {
+        width: 599px;
+        height: 599px;
+        top: 2690px;
+        left: 100px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(5) {
+        width: 599px;
+        height: 599px;
+        top: 3140px;
+        left: -200px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(6) {
+        width: 671px;
+        height: 885px;
+        top: 4000px;
+        left: -200px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(7) {
+        width: 671px;
+        height: 885px;
+        top: 5280px;
+        left: -150px;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .ellipse:nth-child(8) {
+        width: 671px;
+        height: 885px;
+        top: 6700px;
+        left: 0;
+        background: radial-gradient(
+            circle at center,
+            rgba(146, 24, 19, 0.3),
+            rgba(146, 24, 19, 0) 70%
+        );
+    }
+    .mobile-ellipse {
+        visibility: visible;
     }
 }
 
