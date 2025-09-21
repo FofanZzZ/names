@@ -1,3 +1,40 @@
+// Мобильное меню
+
+const overlay = document.querySelector('.overlay');
+const html = document.querySelector('html');
+const menuBtn = document.querySelector('.menu__btn');
+const closeBtn = document.querySelector('.menu__close-btn');
+const menuItems = document.querySelectorAll('.mobile-link');
+const menu = document.querySelector('.menu__mobile');
+
+menuBtn.addEventListener('click', () => {
+  overlay.classList.add('active');
+  menu.classList.add('active');
+  html.classList.add('disable-scroll');
+});
+
+closeBtn.addEventListener('click', () => {
+  overlay.classList.remove('active');
+  menu.classList.remove('active');
+  html.classList.remove('disable-scroll');
+});
+
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('active');
+  menu.classList.remove('active');
+  html.classList.remove('disable-scroll');
+});
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    overlay.classList.remove('active');
+    menu.classList.remove('active');
+    html.classList.remove('disable-scroll');
+  });
+});
+
+// Слайдеры горизонтальный и вертикальный
+
 const swiper = new Swiper('.videos', {
   rewind: true,
   loop: false,
@@ -45,6 +82,8 @@ sliders.forEach((slider, idx) => {
     },
   })
 });
+
+// Работа формы с отправкой данных
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('requestForm');
