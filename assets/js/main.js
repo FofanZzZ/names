@@ -48,11 +48,13 @@ const swiper = new Swiper('.videos', {
   spaceBetween: 16,
 
   breakpoints: {
-        1024: {
-          slidesPerView: 'auto',
-          spaceBetween: 53,
-        },
+    1000: {
+      spaceBetween: 40,
     },
+    1200: {
+      spaceBetween: 53,
+    },
+  },
 });
 
 
@@ -76,7 +78,10 @@ sliders.forEach((slider, idx) => {
     spaceBetween: 24,
 
     breakpoints: {
-      1024: {
+      1000: {
+        spaceBetween: 40,
+      },
+      1200: {
         spaceBetween: 65,
       },
     },
