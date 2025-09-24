@@ -46,6 +46,16 @@ const swiper = new Swiper('.videos', {
 
   slidesPerView: 'auto',
   spaceBetween: 16,
+  // allowTouchMove: false,
+
+  on: {
+      init: function () {
+          updateIframeInteraction(this);
+      },
+      slideChange: function () {
+          updateIframeInteraction(this);
+      },
+  },
 
   breakpoints: {
     1000: {
@@ -56,7 +66,6 @@ const swiper = new Swiper('.videos', {
     },
   },
 });
-
 
 var sliders = document.querySelectorAll('.videos-v'),
     prevArrow1 = document.querySelectorAll('.prev-v-1'),
@@ -76,6 +85,16 @@ sliders.forEach((slider, idx) => {
 
     slidesPerView: 'auto',
     spaceBetween: 24,
+    // allowTouchMove: false,
+
+    on: {
+      init: function () {
+        updateIframeInteraction(this);
+      },
+      slideChange: function () {
+        updateIframeInteraction(this);
+      },
+    },
 
     breakpoints: {
       1000: {
@@ -87,6 +106,25 @@ sliders.forEach((slider, idx) => {
     },
   })
 });
+
+// Включение ивентов на активные слайды слайдера
+
+function updateIframeInteraction(swiperInstance) {
+    // Находим все iframe в слайдах
+    const allIframes = document.querySelectorAll('.videos__item iframe');
+    
+    // Для всех iframe блокируем события мыши
+    allIframes.forEach(iframe => {
+        iframe.style.pointerEvents = 'none';
+    });
+    
+    // Для iframe в активном слайде разрешаем события мыши (чтобы можно было управлять плеером)
+    const activeSlideIframe = swiperInstance.slides[swiperInstance.activeIndex].querySelector('iframe');
+    if (activeSlideIframe) {
+        activeSlideIframe.style.pointerEvents = 'auto';
+    }
+};
+
 
 // Работа формы с отправкой данных
 
@@ -217,22 +255,11 @@ document.addEventListener("DOMContentLoaded", function() {
       // Добавляем обработчик клика на превью
       preview.addEventListener('click', function() {
         // Восстанавливаем src с автозапуском
-        iframe.setAttribute('src', videoSrc + '&autoplay=1');
+        iframe.setAttribute('src', videoSrc);
         iframe.style.display = 'block'; // Показываем iframe
         preview.style.display = 'none'; // Скрываем превью
         text.style.display = 'none'; // Скрываем текст
       });
-
-      // Добавляем возможность возврата к превью (опционально)
-      // iframe.addEventListener('click', function(e) {
-      //   e.stopPropagation(); // Останавливаем всплытие события
-      //   // Можно добавить функционал возврата, например, по двойному клику
-      //   iframe.addEventListener('dblclick', function() {
-      //     iframe.removeAttribute('src');
-      //     iframe.style.display = 'none';
-      //     preview.style.display = 'block';
-      //   });
-      // });
     }
   });
 });
