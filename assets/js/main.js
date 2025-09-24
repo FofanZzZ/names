@@ -46,16 +46,16 @@ const swiper = new Swiper('.videos', {
 
   slidesPerView: 'auto',
   spaceBetween: 16,
-  // allowTouchMove: false,
+  allowTouchMove: false,
 
-  on: {
-      init: function () {
-          updateIframeInteraction(this);
-      },
-      slideChange: function () {
-          updateIframeInteraction(this);
-      },
-  },
+  // on: {
+  //     init: function () {
+  //         updateIframeInteraction(this);
+  //     },
+  //     slideChange: function () {
+  //         updateIframeInteraction(this);
+  //     },
+  // },
 
   breakpoints: {
     1000: {
@@ -85,16 +85,16 @@ sliders.forEach((slider, idx) => {
 
     slidesPerView: 'auto',
     spaceBetween: 24,
-    // allowTouchMove: false,
+    allowTouchMove: false,
 
-    on: {
-      init: function () {
-        updateIframeInteraction(this);
-      },
-      slideChange: function () {
-        updateIframeInteraction(this);
-      },
-    },
+    // on: {
+    //   init: function () {
+    //     updateIframeInteraction(this);
+    //   },
+    //   slideChange: function () {
+    //     updateIframeInteraction(this);
+    //   },
+    // },
 
     breakpoints: {
       1000: {
@@ -109,21 +109,21 @@ sliders.forEach((slider, idx) => {
 
 // Включение ивентов на активные слайды слайдера
 
-function updateIframeInteraction(swiperInstance) {
-    // Находим все iframe в слайдах
-    const allIframes = document.querySelectorAll('.videos__item iframe');
+// function updateIframeInteraction(swiperInstance) {
+//     // Находим все iframe в слайдах
+//     const allIframes = document.querySelectorAll('.videos__item iframe');
     
-    // Для всех iframe блокируем события мыши
-    allIframes.forEach(iframe => {
-        iframe.style.pointerEvents = 'none';
-    });
+//     // Для всех iframe блокируем события мыши
+//     allIframes.forEach(iframe => {
+//         iframe.style.pointerEvents = 'none';
+//     });
     
-    // Для iframe в активном слайде разрешаем события мыши (чтобы можно было управлять плеером)
-    const activeSlideIframe = swiperInstance.slides[swiperInstance.activeIndex].querySelector('iframe');
-    if (activeSlideIframe) {
-        activeSlideIframe.style.pointerEvents = 'auto';
-    }
-};
+//     // Для iframe в активном слайде разрешаем события мыши (чтобы можно было управлять плеером)
+//     const activeSlideIframe = swiperInstance.slides[swiperInstance.activeIndex].querySelector('iframe');
+//     if (activeSlideIframe) {
+//         activeSlideIframe.style.pointerEvents = 'auto';
+//     }
+// };
 
 
 // Работа формы с отправкой данных

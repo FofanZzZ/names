@@ -91,6 +91,10 @@ a {
     align-items: center;
     flex-direction: row;
     padding: 22px 0;
+    & .logo img {
+        width: 174px;
+        height: 56px;
+    }
 }
 
 .showreel {
@@ -200,8 +204,8 @@ a {
 @media (max-width: 1920px) {
     .header__title {
         font-size: clamp(
-            94px,
-            calc(94px + (116px - 94px) * (100vw - 1000px) / (1920px - 1000px)),
+            94px, 
+            94px + (22 * (100vw - 1000px) / 920), 
             116px
         );
     }
@@ -231,8 +235,8 @@ a {
     .header__partner {
         & img {
             height: clamp(
-                40px,
-                calc(40px + (50px - 40px) * (100vw - 1000px) / (1300px - 1000px)),
+                40px, 
+                40px + (10 * (100vw - 1000px) / 300), 
                 50px
             );
         }
@@ -276,7 +280,7 @@ a {
 .tag {
     white-space: nowrap;
     padding: 20px 40px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 54px;
     font-weight: 500;
     font-size: 26px;
@@ -374,8 +378,8 @@ a {
 @media (max-width: 1920px) {
     .videos__item-text {
         font-size: clamp(
-            38px,
-            calc(38px + (45px - 38px) * (100vw - 1000px) / (1920px - 1000px)),
+            38px, 
+            38px + (7 * (100vw - 1000px) / 920), 
             45px
         );
     }
@@ -400,57 +404,57 @@ a {
 @media (max-width: 1920px) {
     .videos {
         height: clamp(
-            400px,
-            calc(400px + (598px - 400px) * (100vw - 1000px) / (1920px - 1000px)),
+            400px, 
+            400px + (198 * (100vw - 1000px) / 920), 
             598px
         );
         .videos__item {
             max-width: clamp(
-                592px,
-                calc(592px + (887px - 592px) * (100vw - 1000px) / (1920px - 1000px)),
+                592px, 
+                592px + (295 * (100vw - 1000px) / 920), 
                 887px
             );
             & img {
                 max-height: clamp(
-                    400px,
-                    calc(400px + (598px - 400px) * (100vw - 1000px) / (1920px - 1000px)),
+                    400px, 
+                    400px + (198 * (100vw - 1000px) / 920), 
                     598px
                 );
             }
             & iframe {
-                width: 100%;
+                width: 100%;                
                 max-height: clamp(
-                    400px,
-                    calc(400px + (598px - 400px) * (100vw - 1000px) / (1920px - 1000px)),
+                    400px, 
+                    400px + (198 * (100vw - 1000px) / 920), 
                     598px
                 );
             }
         }
     }
-    .videos-v {
+    .videos-v {        
         height: clamp(
-            600px,
-            calc(600px + (851px - 600px) * (100vw - 1000px) / (1920px - 1000px)),
+            600px, 
+            600px + (251 * (100vw - 1000px) / 920), 
             851px
         );
-        .videos__item {
+        .videos__item {            
             max-width: clamp(
-                338px,
-                calc(338px + (480px - 338px) * (100vw - 1000px) / (1920px - 1000px)),
+                338px, 
+                338px + (142 * (100vw - 1000px) / 920), 
                 480px
             );
             & img {
                 max-height: clamp(
-                    600px,
-                    calc(600px + (851px - 600px) * (100vw - 1000px) / (1920px - 1000px)),
+                    600px, 
+                    600px + (251 * (100vw - 1000px) / 920), 
                     851px
                 );
             }
             & iframe {
                 width: 100%;
                 max-height: clamp(
-                    600px,
-                    calc(600px + (851px - 600px) * (100vw - 1000px) / (1920px - 1000px)),
+                    600px, 
+                    600px + (251 * (100vw - 1000px) / 920), 
                     851px
                 );
             }
@@ -490,8 +494,8 @@ a {
 @media (max-width: 1920px) {
     .advantages__number {
         font-size: clamp(
-            50px,
-            calc(50px + (77px - 50px) * (100vw - 1000px) / (1920px - 1000px)),
+            50px, 
+            50px + (27 * (100vw - 1000px) / 920), 
             77px
         );
     }
@@ -526,8 +530,8 @@ a {
 @media (max-width: 1920px) {
     .about-us__big {
         font-size: clamp(
-            214px,
-            calc(214px + (323px - 214px) * (100vw - 1000px) / (1920px - 1000px)),
+            214px, 
+            214px + (109 * (100vw - 1000px) / 920), 
             323px
         );
     }
@@ -614,15 +618,15 @@ a {
 @media (max-width: 1920px) {
     .worker__status {
         bottom: clamp(
-            220px,
-            calc(220px + (300px - 220px) * (100vw - 1000px) / (1920px - 1000px)),
+            220px, 
+            220px + (80 * (100vw - 1000px) / 920), 
             300px
         );
     }
     .worker__text {
         max-width: clamp(
-            288px,
-            calc(288px + (448px - 288px) * (100vw - 1000px) / (1920px - 1000px)),
+            288px, 
+            288px + (160 * (100vw - 1000px) / 920), 
             448px
         );
     }
@@ -647,15 +651,15 @@ a {
 @media (max-width: 1920px) {
     .steps {
         margin-bottom: clamp(
-            100px,
-            calc(100px + (170px - 100px) * (100vw - 1000px) / (1920px - 1000px)),
+            100px, 
+            100px + (70 * (100vw - 1000px) / 920), 
             170px
         );
     }
     .steps__title {
         font-size: clamp(
-            88px,
-            calc(88px + (104px - 88px) * (100vw - 1000px) / (1920px - 1000px)),
+            88px, 
+            88px + (22 * (100vw - 1000px) / 920), 
             104px
         );
     }
@@ -686,22 +690,22 @@ a {
 @media (max-width: 1920px) {
     .steps__group {
         gap: clamp(
-            90px,
-            calc(90px + (150px - 90px) * (100vw - 1000px) / (1920px - 1000px)),
+            90px, 
+            90px + (60 * (100vw - 1000px) / 920), 
             150px
         );
         & .step {
             & img {
                 height: clamp(
-                    148px,
-                    calc(148px + (195px - 148px) * (100vw - 1000px) / (1920px - 1000px)),
+                    148px, 
+                    148px + (47 * (100vw - 1000px) / 920), 
                     195px
                 );
             }
             & .step__text {
                 font-size: clamp(
-                    22px,
-                    calc(22px + (33px - 22px) * (100vw - 1000px) / (1920px - 1000px)),
+                    22px, 
+                    22px + (11 * (100vw - 1000px) / 920), 
                     33px
                 );
             }
@@ -726,10 +730,10 @@ a {
 }
 
 @media (max-width: 1920px) {
-    .projects__title {
+    .projects__title {        
         font-size: clamp(
-            74px,
-            calc(74px + (95px - 74px) * (100vw - 1000px) / (1920px - 1000px)),
+            74px, 
+            74px + (21 * (100vw - 1000px) / 920), 
             95px
         );
     }
@@ -792,24 +796,24 @@ a {
 }
 
 @media (max-width: 1920px) {
-    .grid__item-header {
+    .grid__item-header {        
         font-size: clamp(
-            32px,
-            calc(32px + (40px - 32px) * (100vw - 1000px) / (1920px - 1000px)),
+            32px, 
+            32px + (8 * (100vw - 1000px) / 920), 
             40px
         );
     }
-    .grid__item-text {
+    .grid__item-text {        
         font-size: clamp(
-            18px,
-            calc(18px + (20px - 18px) * (100vw - 1000px) / (1920px - 1000px)),
+            18px, 
+            18px + (2 * (100vw - 1000px) / 920), 
             20px
         );
     }
     .grid__item-btn {
         font-size: clamp(
-            20px,
-            calc(20px + (28px - 20px) * (100vw - 1000px) / (1920px - 1000px)),
+            20px, 
+            20px + (8 * (100vw - 1000px) / 920), 
             28px
         );
     }
@@ -975,63 +979,63 @@ a {
 @media (max-width: 1920px) {
     .clouds {
         grid-auto-rows: clamp(
-            250px,
-            calc(250px + (300px - 250px) * (100vw - 1000px) / (1920px - 1000px)),
+            250px, 
+            250px + (50 * (100vw - 1000px) / 920), 
             300px
         );
     }
     .cloud-1 {
         width: clamp(
-            540px,
-            calc(540px + (680px - 540px) * (100vw - 1000px) / (1920px - 1000px)),
+            540px, 
+            540px + (140 * (100vw - 1000px) / 920), 
             680px
         );
         height: clamp(
-            210px,
-            calc(210px + (240px - 210px) * (100vw - 1000px) / (1920px - 1000px)),
+            210px, 
+            210px + (30 * (100vw - 1000px) / 920), 
             240px
         );
     }
     .cloud-2 {
         width: clamp(
-            329px,
-            calc(329px + (469px - 329px) * (100vw - 1000px) / (1920px - 1000px)),
+            329px, 
+            329px + (140 * (100vw - 1000px) / 920), 
             469px
         );
         height: clamp(
-            130px,
-            calc(130px + (151px - 130px) * (100vw - 1000px) / (1920px - 1000px)),
+            130px, 
+            130px + (21 * (100vw - 1000px) / 920), 
             151px
         );
     }
     .cloud-3 {
         width: clamp(
-            427px,
-            calc(427px + (567px - 427px) * (100vw - 1000px) / (1920px - 1000px)),
+            427px, 
+            427px + (140 * (100vw - 1000px) / 920), 
             567px
         );
         height: clamp(
-            200px,
-            calc(200px + (239px - 200px) * (100vw - 1000px) / (1920px - 1000px)),
+            200px, 
+            200px + (39 * (100vw - 1000px) / 920), 
             239px
         );
     }
     .cloud-4 {
         width: clamp(
-            400px,
-            calc(400px + (540px - 400px) * (100vw - 1000px) / (1920px - 1000px)),
+            400px, 
+            400px + (140 * (100vw - 1000px) / 920), 
             540px
         );
         height: clamp(
-            140px,
-            calc(140px + (152px - 140px) * (100vw - 1000px) / (1920px - 1000px)),
+            140px, 
+            140px + (12 * (100vw - 1000px) / 920), 
             152px
         );
     }
     .clouds__text {
         font-size: clamp(
-            34px,
-            calc(34px + (46px - 34px) * (100vw - 1000px) / (1920px - 1000px)),
+            34px, 
+            34px + (12 * (100vw - 1000px) / 920), 
             46px
         );
     }
@@ -1126,34 +1130,34 @@ a {
 @media (max-width: 1920px) {
     .map {
         column-gap: clamp(
-            40px,
-            calc(40px + (65px - 40px) * (100vw - 1000px) / (1920px - 1000px)),
+            40px, 
+            40px + (25 * (100vw - 1000px) / 920), 
             65px
         );
         grid-template-columns: 1fr clamp(
-            545px,
-            calc(545px + (839px - 545px) * (100vw - 1000px) / (1920px - 1000px)),
+            545px, 
+            545px + (294 * (100vw - 1000px) / 920), 
             839px
         );
     }
     .map__text {
         font-size: clamp(
-            38px,
-            calc(38px + (59px - 38px) * (100vw - 1000px) / (1920px - 1000px)),
+            38px, 
+            38px + (21 * (100vw - 1000px) / 920), 
             59px
         );
     }
     .address__city {
         font-size: clamp(
-            36px,
-            calc(36px + (57px - 36px) * (100vw - 1000px) / (1920px - 1000px)),
+            36px, 
+            36px + (21 * (100vw - 1000px) / 920), 
             57px
         );
     }
     .address__place {
         font-size: clamp(
-            17px,
-            calc(17px + (21px - 17px) * (100vw - 1000px) / (1920px - 1000px)),
+            17px, 
+            17px + (4 * (100vw - 1000px) / 920), 
             21px
         );
     }
@@ -1345,68 +1349,68 @@ button[disabled]:hover {
 @media (max-width: 1920px) {
     .request__title {
         font-size: clamp(
-            50px,
-            calc(50px + (89px - 50px) * (100vw - 1000px) / (1920px - 1000px)),
+            50px, 
+            50px + (39 * (100vw - 1000px) / 920), 
             89px
         );
     }
     .request__text {
         font-size: clamp(
-            22px,
-            calc(22px + (29px - 22px) * (100vw - 1000px) / (1920px - 1000px)),
+            22px, 
+            22px + (7 * (100vw - 1000px) / 920), 
             29px
         );
     }
     .request__form {
         & label {
             gap: clamp(
-                18px,
-                calc(18px + (23px - 18px) * (100vw - 1000px) / (1920px - 1000px)),
+                18px, 
+                18px + (5 * (100vw - 1000px) / 920), 
                 23px
             );
             font-size: clamp(
-                21px,
-                calc(21px + (25px - 21px) * (100vw - 1000px) / (1920px - 1000px)),
+                21px, 
+                21px + (4 * (100vw - 1000px) / 920), 
                 25px
             );
-            & input {
+            & input {                
                 padding: clamp(
-                    21px,
-                    calc(21px + (25px - 21px) * (100vw - 1000px) / (1920px - 1000px)),
+                    21px, 
+                    21px + (4 * (100vw - 1000px) / 920), 
                     25px
                 ) clamp(
-                    30px,
-                    calc(30px + (34px - 30px) * (100vw - 1000px) / (1920px - 1000px)),
+                    30px, 
+                    30px + (4 * (100vw - 1000px) / 920), 
                     34px
                 );
                 font-size: clamp(
-                    16px,
-                    calc(16px + (25px - 16px) * (100vw - 1000px) / (1920px - 1000px)),
+                    16px, 
+                    16px + (9 * (100vw - 1000px) / 920), 
                     25px
                 );
             }
         }
         & button {
             padding: clamp(
-                25px,
-                calc(25px + (32px - 25px) * (100vw - 1000px) / (1920px - 1000px)),
+                25px, 
+                25px + (7 * (100vw - 1000px) / 920), 
                 32px
             ) clamp(
-                54px,
-                calc(54px + (100px - 54px) * (100vw - 1000px) / (1920px - 1000px)),
+                54px, 
+                54px + (46 * (100vw - 1000px) / 920), 
                 100px
             );
             font-size: clamp(
-                18px,
-                calc(18px + (24px - 18px) * (100vw - 1000px) / (1920px - 1000px)),
+                18px, 
+                18px + (6 * (100vw - 1000px) / 920), 
                 24px
             );
         }
     }
     .request__politics {
         font-size: clamp(
-            14px,
-            calc(14px + (20px - 14px) * (100vw - 1000px) / (1920px - 1000px)),
+            14px, 
+            14px + (6 * (100vw - 1000px) / 920), 
             20px
         );
     }
@@ -1616,15 +1620,15 @@ button[disabled]:hover {
 @media (max-width: 1920px) {
     .menu__list {
         gap: clamp(
-            70px,
-            calc(70px + (96px - 70px) * (100vw - 1200px) / (1920px - 1200px)),
+            70px, 
+            70px + (26 * (100vw - 1000px) / 920), 
             96px
         );
     }
     .header__text {
         margin-bottom: clamp(
-            60px,
-            calc(60px + (90px - 60px) * (100vw - 1200px) / (1920px - 1200px)),
+            60px, 
+            60px + (30 * (100vw - 1000px) / 920), 
             90px
         );
     }
@@ -1658,6 +1662,10 @@ button[disabled]:hover {
     }
     .header__top {
         padding: 13px 0 21px 0;
+        & .logo img {
+            width: 182px;
+            height: 58px;
+        }
     }
     .menu__list {
         display: none;
@@ -1700,8 +1708,8 @@ button[disabled]:hover {
             margin-bottom: 27px;
             & .cost__btn {
                 font-size: clamp(
-                    14px,
-                    calc(14px + (16px - 14px) * (100vw - 360px) / (980px - 360px)),
+                    14px, 
+                    14px + (2 * (100vw - 360px) / 620), 
                     16px
                 );
                 padding: 15px 20px;
@@ -1753,6 +1761,21 @@ button[disabled]:hover {
             }
         }
     }
+    .menu__mail {
+        width: 100%;
+        margin-bottom: 27px;
+        & a {
+            white-space: nowrap;            
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 136%;
+            color: #919191;
+            transition: 0.2s linear;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
     .menu__socials {
         display: flex;
         flex-direction: row;
@@ -1767,8 +1790,8 @@ button[disabled]:hover {
     }
     .header__title {
         font-size: clamp(
-            48px,
-            calc(48px + (98px - 48px) * (100vw - 360px) / (980px - 360px)),
+            48px, 
+            48px + (50 * (100vw - 360px) / 620), 
             98px
         );
         margin-bottom: 0;
@@ -1805,8 +1828,8 @@ button[disabled]:hover {
     }
     .header__text {
         font-size: clamp(
-            18px,
-            calc(18px + (33px - 18px) * (100vw - 360px) / (980px - 360px)),
+            18px, 
+            18px + (15 * (100vw - 360px) / 620), 
             33px
         );
         padding: 0 17px 0 17px;
@@ -1819,8 +1842,8 @@ button[disabled]:hover {
         margin-bottom: 80px;
         & img {
             max-height: clamp(
-                30px,
-                calc(30px + (50px - 30px) * (100vw - 360px) / (980px - 360px)),
+                30px, 
+                30px + (20 * (100vw - 360px) / 620), 
                 50px
             );
         }
@@ -1831,13 +1854,13 @@ button[disabled]:hover {
     }
     .content__header {
         font-size: clamp(
-            26px,
-            calc(26px + (60px - 26px) * (100vw - 360px) / (980px - 360px)),
+            26px, 
+            26px + (34 * (100vw - 360px) / 620), 
             60px
         );
         margin-bottom: clamp(
-            20px,
-            calc(20px + (50px - 20px) * (100vw - 360px) / (980px - 360px)),
+            20px, 
+            20px + (30 * (100vw - 360px) / 620), 
             50px
         );
     }
@@ -1850,8 +1873,8 @@ button[disabled]:hover {
     .tag {
         padding: 15px 30px;
         font-size: clamp(
-            14px,
-            calc(14px + (18px - 14px) * (100vw - 360px) / (980px - 360px)),
+            14px, 
+            14px + (4 * (100vw - 360px) / 620), 
             18px
         );
     }
@@ -1867,21 +1890,21 @@ button[disabled]:hover {
     .videos {
         margin-bottom: 27px;
         height: clamp(
-            181px,
-            calc(181px + (400px - 181px) * (100vw - 360px) / (980px - 360px)),
+            181px, 
+            181px + (219 * (100vw - 360px) / 620), 
             400px
         );
         & .videos__item {
             max-width: clamp(
-                268px,
-                calc(268px + (592px - 268px) * (100vw - 360px) / (980px - 360px)),
+                268px, 
+                268px + (324 * (100vw - 360px) / 620), 
                 592px
             );
         }
-        & .videos__item-text {
+        & .videos__item-text {            
             font-size: clamp(
-                14px,
-                calc(14px + (18px - 14px) * (100vw - 360px) / (980px - 360px)),
+                14px, 
+                14px + (4 * (100vw - 360px) / 620), 
                 18px
             );
             left: 12px;
@@ -1891,21 +1914,21 @@ button[disabled]:hover {
     .videos-v {
         margin-bottom: 27px;
         height: clamp(
-            323px,
-            calc(323px + (600px - 323px) * (100vw - 360px) / (980px - 360px)),
+            323px, 
+            323px + (277 * (100vw - 360px) / 620), 
             600px
         );
         & .videos__item {
             max-width: clamp(
-                182px,
-                calc(182px + (338px - 182px) * (100vw - 360px) / (980px - 360px)),
+                182px, 
+                182px + (156 * (100vw - 360px) / 620), 
                 338px
             );
         }
         & .videos__item-text {
             font-size: clamp(
-                14px,
-                calc(14px + (18px - 14px) * (100vw - 360px) / (980px - 360px)),
+                14px, 
+                14px + (4 * (100vw - 360px) / 620), 
                 18px
             );
             left: 17px;
@@ -2004,8 +2027,8 @@ button[disabled]:hover {
             & .step__text {
                 max-width: none;
                 font-size: clamp(
-                    14px,
-                    calc(14px + (18px - 14px) * (100vw - 360px) / (980px - 360px)),
+                    14px, 
+                    14px + (4 * (100vw - 360px) / 620), 
                     18px
                 );
             }
