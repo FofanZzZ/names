@@ -195,3 +195,44 @@ document.addEventListener('DOMContentLoaded', function() {
   // Инициализация кнопки при загрузке
   updateSubmitButton();
 });
+
+
+// Скрипт для отложенной загрузки
+document.addEventListener("DOMContentLoaded", function() {
+  // Находим все блоки с видео
+  const videoItems = document.querySelectorAll(".videos__item");
+
+  videoItems.forEach(function(item) {
+    // Находим элементы внутри каждого блока
+    const iframe = item.querySelector('iframe');
+    const preview = item.querySelector('.video-preview');
+    const text = item.querySelector('.videos__item-text');
+    
+    if (iframe && preview) {
+      // Сохраняем оригинальный src и удаляем его из iframe
+      let videoSrc = iframe.getAttribute('src');
+      iframe.removeAttribute('src');
+      iframe.style.display = 'none'; // Скрываем iframe
+
+      // Добавляем обработчик клика на превью
+      preview.addEventListener('click', function() {
+        // Восстанавливаем src с автозапуском
+        iframe.setAttribute('src', videoSrc + '&autoplay=1');
+        iframe.style.display = 'block'; // Показываем iframe
+        preview.style.display = 'none'; // Скрываем превью
+        text.style.display = 'none'; // Скрываем текст
+      });
+
+      // Добавляем возможность возврата к превью (опционально)
+      // iframe.addEventListener('click', function(e) {
+      //   e.stopPropagation(); // Останавливаем всплытие события
+      //   // Можно добавить функционал возврата, например, по двойному клику
+      //   iframe.addEventListener('dblclick', function() {
+      //     iframe.removeAttribute('src');
+      //     iframe.style.display = 'none';
+      //     preview.style.display = 'block';
+      //   });
+      // });
+    }
+  });
+});
